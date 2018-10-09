@@ -17,4 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::any('login', 'Auth\LoginController@login')->name('admin.login');
+Route::get('logout', 'Auth\LoginController@logout')->name('admin.logout');
+
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth'], function () {
+	Route::get('/', 'HomeController@index')->name('admin.home');
+});

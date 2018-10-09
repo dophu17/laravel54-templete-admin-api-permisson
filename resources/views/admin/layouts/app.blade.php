@@ -79,7 +79,7 @@
                         </button>
                         
                         <!-- BEGIN: Topbar -->
-                        @include('layouts.topbar')
+                        @include('admin.layouts.topbar')
                         <!-- END: Topbar -->
                     </div>
                 </div>
@@ -95,7 +95,7 @@
             </button>
             <div id="m_aside_left" class="m-grid__item  m-aside-left  m-aside-left--skin-dark ">
                 <!-- BEGIN: Aside Menu -->
-                @include('layouts.menu_left')
+                @include('admin.layouts.menu_left')
                 <!-- END: Aside Menu -->
             </div>
             <!-- END: Left Aside -->
@@ -106,13 +106,13 @@
         <!-- end:: Body -->
 
         <!-- begin::Footer -->
-        @include('layouts.footer')
+        @include('admin.layouts.footer')
         <!-- end::Footer -->
     </div>
     <!-- end:: Page -->
     
     <!-- begin::Quick Sidebar -->
-    @include('layouts.quick_sidebar')
+    @include('admin.layouts.quick_sidebar')
     <!-- end::Quick Sidebar -->   
 
     <!-- begin::Scroll Top -->
